@@ -8,6 +8,8 @@
 </template>
 
 <script>
+import uuid from 'uuid';
+
 export default {
   name: "AddTodo",
   data() {
@@ -19,8 +21,12 @@ export default {
     // Construct the new todo before sending it ($emit) to the App that will add it to the todos data
     addTodo() {
       const newTodo = {
-        id:
+        id: uuid.v4(),
+        title: this.title,
+        completed: false
       }
+      //Send up to parent
+      this.$emit('add-todo', newTodo);
     }
   }
 }
