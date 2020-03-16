@@ -36,7 +36,7 @@ export default {
   },
   methods: {
     deleteTodo(id) {
-      console.log(`todo ${id} deleted`);
+      this.todos = this.todos.filter(todo => todo.id !== id);
     }
   },
 }
