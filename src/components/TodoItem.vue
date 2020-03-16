@@ -4,6 +4,7 @@
     <p>
       <input type="checkbox" v-on:change="markComplete">
       {{todo.title}}
+      <button class="del">x</button>
     </p>
   </div>
 </template>
@@ -31,7 +32,7 @@ export default {
     text-decoration: line-through;
   }
 
-  .def {
+  .del {
     background: #ff0000;
     color: #fff;
     border: none;
