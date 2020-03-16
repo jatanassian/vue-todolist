@@ -1,6 +1,6 @@
 <template>
   <div>
-    <form>
+    <form @submit="addTodo">
       <input type="text" v-model="title" name="title" placeholder="Add Todo...">
       <input type="submit" value="Submit" class="btn">
     </form>
@@ -13,6 +13,14 @@ export default {
   data() {
     return {
       title: ''
+    }
+  },
+  methods: {
+    // Construct the new todo before sending it ($emit) to the App that will add it to the todos data
+    addTodo() {
+      const newTodo = {
+        id:
+      }
     }
   }
 }
