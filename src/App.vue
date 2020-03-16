@@ -38,6 +38,14 @@ export default {
     axios.get('https://jsonplaceholder.typicode.com/todos?_limit=5')
       .then(res => this.todos = res.data)
       .catch(err => console.log(err));
+  // Same but with async/await
+  // async created() {
+  //   try {
+  //     let res = await axios.get('https://jsonplaceholder.typicode.com/todos?_limit=5');
+  //     this.todos = res.data;
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
   }
 }
 </script>
