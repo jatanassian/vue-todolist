@@ -11,6 +11,6 @@ This project is a todo list, made following [Brad Traversy's tutorial](https://w
 4. Go to <http://localhost:8080/> in your browser and tinker with the app.
 
 ## Dependencies
-..* vue
-..* vue-router
-..* axios
+* vue
+* vue-router
+* axios
